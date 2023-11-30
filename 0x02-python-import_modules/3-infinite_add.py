@@ -3,10 +3,10 @@
 if __name__ == "__main__":
     import sys
 
-    ac = len(sys.argv) - 1
-    res = 0
+    arg_count = len(sys.argv) - 1
+    result = 0
 
-    if ac > 0:
-        for i in range(ac):
-            res += int(sys.argv[i + 1])
-    print("{:d}".format(res))
+    if arg_count > 0:
+        for i in range(arg_count):
+            result += int(sys.argv[i + 1])
+    print("{:d}".format(result))
