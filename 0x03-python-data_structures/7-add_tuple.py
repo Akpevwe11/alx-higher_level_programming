@@ -23,7 +23,7 @@ def add_tuple(tuple_a=(), tuple_b=()):
         first_element_b = 0
         second_element_b = 0
 
-    result_tuple = (first_element_a + first_element_b, second_element_a 
-                    + second_element_b)
+    result_tuple = (first_element_a + first_element_b, second_element_a +
+                second_element_b)
 
     return result_tuple
