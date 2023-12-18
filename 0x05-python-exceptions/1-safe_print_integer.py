@@ -6,4 +6,4 @@ def safe_print_integer(value):
         int_val = True
     except Exception as e:
         pass
-    return status
+    return int_val
