@@ -1,0 +1,52 @@
+>>> add_integer = __import__('0-add_integer').add_integer
+
+>>> add_integer(0, 0)
+0
+
+>>> add_integer(0, -1)
+-1
+
+>>> add_integer(1000, 1000)
+2000
+
+>>> add_integer(10.5, 5.3)
+15
+
+
+---------------- Checking Not Passed Values ------------------
+>>> add_integer()
+Traceback (most recent call last):
+TypeError: add_integer() missing 1 required positional argument: 'a'
+
+------------------- Checking Strings -----------------------------------
+>>> add_integer('a', 50)
+Traceback (most recent call last):
+TypeError: a must be an integer
+
+
+>>> add_integer(50, 'mario')
+Traceback (most recent call last):
+TypeError: b must be an integer
+
+>>> add_integer('a')
+Traceback (most recent call last):
+TypeError: a must be an integer
+
+------------------ Checking infinity Values -------------------
+>>> add_integer(float('inf'), 0)
+Traceback (most recent call last):
+TypeError: a must be an integer not float infinity
+
+>>> add_integer(50, float('-inf'))
+Traceback (most recent call last):
+TypeError: b must be an integer not float infinity
+
+
+------------------ Checking complex Values -------------------
+>>> add_integer(50j, 0)
+Traceback (most recent call last):
+TypeError: a must be an integer
+
+>>> add_integer(50, 80j)
+Traceback (most recent call last):
+TypeError: b must be an integer
