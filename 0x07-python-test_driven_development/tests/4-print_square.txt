@@ -1,0 +1,22 @@
+>>> fun = __import__('4-print_square').print_square
+
+------------------------- Test Cases -----------------------
+>>> fun(6)
+######
+######
+######
+######
+######
+######
+
+>>> fun(-6)
+Traceback (most recent call last):
+ValueError: size must be greather than 0
+
+>>> fun("")
+Traceback (most recent call last):
+TypeError: size must be integer
+
+>>> fun(2.5)
+Traceback (most recent call last):
+TypeError: size must be integer

@@ -1,0 +1,22 @@
+>>> myname = __import__('3-say_my_name').say_my_name
+
+-------------------- Test Cases -------------------------
+>>> myname("MARIO")
+'My name is MARIO'
+
+>>> myname(1)
+Traceback (most recent call last):
+TypeError: firstname must be a string
+
+>>> myname("Mario",1)
+Traceback (most recent call last):
+TypeError: lastname must be a string
+
+
+>>> myname(None)
+Traceback (most recent call last):
+TypeError: firstname must be a not null
+
+>>> myname("")
+Traceback (most recent call last):
+ValueError: firstname must vaild name
