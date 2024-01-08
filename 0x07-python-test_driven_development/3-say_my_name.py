@@ -1,23 +1,21 @@
 #!/usr/bin/python3
-"""the moudle responsable to print firstname, lastname"""
+""""
+This module contains a function that prints a name
+"""
 
 
-def say_my_name(firstname, lastname=""):
-    """
-    this function takes firstname, lastname and
-    print it in format My name is <firstname> <lastname>
+def say_my_name(first_name, last_name=""):
+    '''This function prints name (<first name> <last name>)
     Args:
-        firstname (str): the user firstname
-        lastname (str): the user firstname
-    Returns:
-        My name is <firstname> <lastname>
-    """
-    if firstname is None:
-        raise TypeError("firstname must be a not null")
-    if not isinstance(firstname, str):
-        raise TypeError("firstname must be a string")
-    if not isinstance(lastname, str):
-        raise TypeError("lastname must be a string")
-    if len(firstname) == 0:
-        raise ValueError("firstname must vaild name")
-    return f"My name is {firstname}{lastname}"
+        first_name (str): The fisrt name to be printed
+        last_name (str): The last name to be printed
+    Raises:
+        TypeError: If either the first_name and last_name are not strings
+    '''
+
+    if not isinstance(first_name, str):
+        raise TypeError("first_name must be a string")
+
+    if not isinstance(last_name, str):
+        raise TypeError("last_name must be a string")
+    print(f"My name is {first_name} {last_name}")
