@@ -32,4 +32,4 @@ class TestBase(unittest.TestCase):
     def test_base_id(self):
         self.assertEqual(Base().id, 1)
         self.assertEqual(Base(10).id, 10)
-        self.assertEqual(Base().id, 2))
+        self.assertEqual(Base().id, 2)
