@@ -167,3 +167,31 @@ praisex64@ubuntu:~/0x11$
 ```
 
 
+### Task 7:
+
+Write a Python script that takes in a `URL`, sends a request to the URL and displays the body of the response.
+
+ **Requirements:**
+
+  
+   [x] If the HTTP status code is greater than or equal to 400, print: Error code: followed by the value of  the HTTP status code
+   [x] You must use the packages requests and sys
+   [x] You are not allowed to import packages other than requests and sys
+   [x] You don’t need to check arguments passed to the script (`number` or `type`)
+
+
+**Example**
+
+```bash
+praisex64@ubuntu:~/0x11$ ./7-error_code.py http://0.0.0.0:5000
+Index
+praisex64@ubuntu:~/0x11$ ./7-error_code.py http://0.0.0.0:5000/status_401
+Error code: 401
+praisex64@ubuntu:~/0x11$ ./7-error_code.py http://0.0.0.0:5000/doesnt_exist
+Error code: 404
+praisex64@ubuntu:~/0x11$ ./7-error_code.py http://0.0.0.0:5000/status_500
+Error code: 500
+praisex64@ubuntu:~/0x11$ 
+```
+
+
