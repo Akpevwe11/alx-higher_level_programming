@@ -226,3 +226,22 @@ praisex64@ubuntu:~/0x11$
 ```
 
 
+### Task 9:
+
+Write a Python script that takes your GitHub credentials (username and password) and uses the GitHub API to display your id
+
+[x] You must use Basic Authentication with a personal access token as password to access to your information (only read:user permission is needed)
+[x] The first argument will be your username
+[x] The second argument will be your password (in your case, a personal access token as password)
+[x] You must use the package requests and sys
+[x] You are not allowed to import packages other than requests and sys
+[x] You don’t need to check arguments passed to the script (number or type)
+
+
+```bash
+praisex64@ubuntu:~/0x11$ ./10-my_github.py papamuziko cisfun
+2531536
+praisex64@ubuntu:~/0x11$ ./10-my_github.py papamuziko wrong_pwd
+None
+praisex64@ubuntu:~/0x11$ 
+```
