@@ -72,3 +72,32 @@ praisex64@ubuntu:~/0x11$
 ```
 
 
+### Task 3:
+
+A Python script that takes in a URL, sends a request to the URL and displays the body of the response (decoded in `utf-8`).
+
+ **Requirements:**
+
+    
+   [x] You have to manage `urllib.error.HTTPError` exceptions and print: Error code: followed by the HTTP  status code
+   [x] You must use the packages `urllib` and `sys`
+   [x] You are not allowed to import other packages than `urllib` and `sys`
+   [x] You don’t need to check arguments passed to the script (`number` or `type`)
+   [x] You must use the `with` statement
+
+
+Example:
+
+```bash
+praisex64@ubuntu:~/0x11$ ./3-error_code.py http://0.0.0.0:5000
+Index
+praisex64@ubuntu:~/0x11$ ./3-error_code.py http://0.0.0.0:5000/status_401
+Error code: 401
+praisex64@ubuntu:~/0x11$ ./3-error_code.py http://0.0.0.0:5000/doesnt_exist
+Error code: 404
+praisex64@ubuntu:~/0x11$ ./3-error_code.py http://0.0.0.0:5000/status_500
+Error code: 500
+praisex64@ubuntu:~/0x11$ 
+```
+
+
