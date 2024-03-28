@@ -100,4 +100,27 @@ Error code: 500
 praisex64@ubuntu:~/0x11$ 
 ```
 
+### Task 4:
+
+Write a Python script that fetches https://alx-intranet.hbtn.io/status.
+
+ **Requirements:**
+
+    [x] You must use the package requests
+    [x] You are not allow to import packages other than requests
+    [x] The body of the response must be display like the following example (tabulation before -)
+
+
+
+Example:
+
+```bash
+praisex64@ubuntu:~/0x11$ ./4-hbtn_status.py | cat -e
+Body response:$
+    - type: <class 'str'>$
+    - content: OK$
+praisex64@ubuntu:~/0x11$ 
+
+```
+
 
