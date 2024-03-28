@@ -50,8 +50,25 @@ praisex64@ubuntu:~/0x11$
 ```
 
 
+### Task 2:
+
+Write a Python script that takes in a URL and an email, sends a POST request to the passed URL with the email as a parameter, and displays the body of the response (decoded in `utf-8`)
+
+ **Requirements:**
+    
+   [x] The email must be sent in the `email` variable
+   [x] You must use the packages urllib and sys
+   [x] You are not allowed to import packages other than urllib and sys
+   [x] You don’t need to check arguments passed to the script (number or type)
+   [x] You must use the with statement
 
 
+Example:
 
+```bash
+praisex64@ubuntu:~/0x11$ ./2-post_email.py http://0.0.0.0:5000/post_email hr@holbertonschool.com
+Your email is: hr@holbertonschool.com
+praisex64@ubuntu:~/0x11$ 
+```
 
 
