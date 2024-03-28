@@ -194,4 +194,35 @@ Error code: 500
 praisex64@ubuntu:~/0x11$ 
 ```
 
+### Task 8:
+
+Write a Python script that takes in a letter and sends a `POST` request to http://0.0.0.0:5000/search_user with the letter as a parameter..
+
+ **Requirements:**
+    
+   [x] The letter must be sent in the variable `q`
+   [x] If no argument is given, set q=""
+   [x] If the response body is properly `JSON` formatted and not empty, display the id and name like this: [<id>] <name>
+    Otherwise:
+        Display Not a valid JSON if the JSON is invalid
+        Display No result if the JSON is empty
+    [x] You must use the package `requests` and `sys`
+    [x] You are not allowed to import packages other than `requests` and `sys`
+
+
+
+**Example**
+
+```bash
+praisex64@ubuntu:~/0x11$ ./8-json_api.py 
+No result
+praisex64@ubuntu:~/0x11$ ./8-json_api.py a
+[8446] amnirqhtfjq
+praisex64@ubuntu:~/0x11$ ./8-json_api.py 2
+No result
+praisex64@ubuntu:~/0x11$ ./8-json_api.py b
+[7094] bmofakakhke
+praisex64@ubuntu:~/0x11$ 
+```
+
 
