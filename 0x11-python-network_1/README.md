@@ -123,4 +123,26 @@ praisex64@ubuntu:~/0x11$
 
 ```
 
+### Task 5:
+
+Write a Python script that takes in a URL, sends a request to the URL and displays the value of the variable `X-Request-Id` in the response header.
+
+ **Requirements:**
+
+ 
+  [x]  You must use the packages `requests` and `sys`
+  [x]  You are not allow to import other packages than `requests` and `sys`
+  [x]  The value of this variable is different for each request
+  [x]  You don’t need to check script arguments (`number` and `type`)
+
+Example:
+
+```bash
+praisex64@ubuntu:~/0x11$ ./5-hbtn_header.py https://alx-intranet.hbtn.io
+5e52e160-c822-4669-8b3a-8b3bbca7b090
+praisex64@ubuntu:~/0x11$ 
+praisex64@ubuntu:~/0x11$ ./5-hbtn_header.py https://alx-intranet.hbtn.io
+eaceaf35-bc0f-4f74-994a-7be0728ec654
+praisex64@ubuntu:~/0x11$ 
+```
 
